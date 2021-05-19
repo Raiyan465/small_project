@@ -1,0 +1,7 @@
+<form [formGroup]="form">
+    <input type="number" step="any" placeholder="Height In Metres" [formControlName]="'height'" >
+    <input type="number" step="any" placeholder="Weight in Kilos" [formControlName]="'kg'" >
+</form>
+
+<button (click)="bmi()">Get BMI</button>
+<p>{{bMi}}</p>  
